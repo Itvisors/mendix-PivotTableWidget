@@ -53,7 +53,7 @@ Normal installation using the App Store
 
 ##Dependencies
  
-- Mendix 5.1.1 Environment
+- Mendix 6 Environment
 
 ##Configuration
 
