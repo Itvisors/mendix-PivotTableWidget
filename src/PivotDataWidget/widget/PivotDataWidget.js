@@ -1058,18 +1058,18 @@
                             if (colIndex === 0) {
                                 exportData += '""';
                             } else {
-                                exportData += ',"' + cell.textContent + '"';
+                                exportData += ',"' + cell.text + '"';
                             }
                         } else {
                             if (colIndex === 0) {
-                                exportData += '"' + cell.textContent + '"';
+                                exportData += '"' + cell.text + '"';
                             } else {
                                 if (useQuotes) {
                                     exportData += ',"';
                                 } else {
                                     exportData += ',';
                                 }
-                                exportData += cell.textContent;
+                                exportData += cell.text;
                                 if (useQuotes) {
                                     exportData += '"';
                                 }
