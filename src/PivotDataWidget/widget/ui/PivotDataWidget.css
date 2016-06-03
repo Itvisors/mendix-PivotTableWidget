@@ -3,6 +3,12 @@
     overflow: auto;
 }
 
+.PivotDataWidget table,
+.PivotDataWidget th,
+.PivotDataWidget td {
+	border: 1px solid #ccc;
+}
+
 .PivotDataWidgetYLabel {
     padding-right: 10px;
     font-weight: bold;
@@ -29,12 +35,10 @@
 }
 
 .PivotDataWidgetOddRow {
-    border: 1px solid #ccc;
     background-color: #DFFFE7;
 }
 
 .PivotDataWidgetEvenRow {
-    border: 1px solid #ccc;
 }
 
 .PivotDataWidgetCellLeft,
@@ -43,7 +47,6 @@
     padding-left: 5px;
     padding-right: 5px;
     color: black;
-    border: 1px solid #ccc;
 }
 
 .PivotDataWidgetCellLeft {
@@ -63,7 +66,6 @@
 }
 
 .PivotDataWidgetTotalRow {
-    border: 1px solid #ccc;
     background-color: #ccc;
 }
 
