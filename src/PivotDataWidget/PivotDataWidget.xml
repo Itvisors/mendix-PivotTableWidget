@@ -293,6 +293,11 @@
             <category>Styling</category>
             <description>Cell CSS class.</description>
         </property>
+        <property key="emptyCellValueClass" type="string" required="false">
+            <caption>Empty cell value class</caption>
+            <category>Styling</category>
+            <description>This class is set on the cell when all values are empty.</description>
+        </property>
         <property key="displayValueClass" type="string" defaultValue="PivotDataWidgetDisplay-">
             <caption>Display value class</caption>
             <category>Styling</category>

@@ -494,6 +494,7 @@
                 // console.log(this.domNode.id + ": buildTableData");
 
                 var
+                    hasValue,
                     mendixObject,
                     mendixObjectIndex,
                     cellMapKey,
@@ -513,6 +514,12 @@
 
                 for (mendixObjectIndex = 0; mendixObjectIndex < this.mendixObjectArray.length; mendixObjectIndex = mendixObjectIndex + 1) {
                     mendixObject    = this.mendixObjectArray[mendixObjectIndex];
+                    // Set a flag on the cell value object, when all objects have an empty value, an additional class will be set on the table cell
+                    if (mendixObject.get(this.cellValueAttr)) {
+                        hasValue = true;
+                    } else {
+                        hasValue = false;
+                    }
                     // For display, convert to display value as no aggregation will take place.
                     if (this.cellValueAction === "display") {
                         cellValue   = this.getDisplayValue(mendixObject, this.cellValueAttr, this.cellValueDateformat);
@@ -537,10 +544,14 @@
                     if (this.cellMap[cellMapKey]) {
                         cellMapObject = this.cellMap[cellMapKey];
                         cellMapObject.cellValueArray.push(cellValue);
+                        if (hasValue) {
+                            cellMapObject.hasValue = true;
+                        }
                     } else {
                         cellMapObject = {
                             xIdValue        : xIdValue,
                             yIdValue        : yIdValue,
+                            hasValue        : hasValue,
                             cellValueArray  : [cellValue]
                         };
                         // Save sort key value in the map object too, used as additional styling CSS class
@@ -668,6 +679,8 @@
                     displayValueCellClass,
                     exportButton,
                     footerRowNode,
+                    hasEmptyCellClass,
+                    hasValue,
                     headerRowNode,
                     node,
                     nodeValue,
@@ -709,6 +722,13 @@
                     headerRowNode.appendChild(this.createHeaderNode(this.totalColumnLabel));
                 }
                 tableNode.appendChild(headerRowNode);
+                
+                // Has empty cell value class?
+                if (this.emptyCellValueClass) {
+                    hasEmptyCellClass = true;
+                } else {
+                    hasEmptyCellClass = false;
+                }
 
                 // Rows
                 for (rowIndex = 0; rowIndex < this.yKeyArray.length; rowIndex = rowIndex + 1) {
@@ -737,11 +757,14 @@
                         // It is possible that no values exists for a given combination of the two IDs
                         tresholdClass = null;
                         displayValueCellClass = null;
+                        hasValue = false;
                         if (this.cellMap[cellMapKey]) {
                             cellMapObject   = this.cellMap[cellMapKey];
                             cellValue       = cellMapObject.cellValue;
                             // Process the styling tresholds, if requested
-                            if (this.tresholdList && this.tresholdList.length) {
+                            // If the cell has no value and an empty cell class has been provided, use that class rather than the tresholds.
+                            hasValue = cellMapObject.hasValue;
+                            if (this.tresholdList && this.tresholdList.length && (hasValue || !hasEmptyCellClass)) {
                                 for (tresholdIndex = 0; tresholdIndex < this.tresholdList.length; tresholdIndex = tresholdIndex + 1) {
                                     switch (this.cellValueAttrType) {
                                     case "DateTime":
@@ -811,6 +834,10 @@
                         // Additional class based on the treshold?
                         if (tresholdClass) {
                             domClass.add(node, tresholdClass);
+                        }
+                        // Empty cell value clas?
+                        if (!hasValue && hasEmptyCellClass) {
+                            domClass.add(node, this.emptyCellValueClass);
                         }
                         // Additional class for display?
                         if (displayValueCellClass) {
