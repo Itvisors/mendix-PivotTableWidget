@@ -23,9 +23,9 @@
     require([
 
         'dojo/_base/declare', 'mxui/widget/_WidgetBase', 'dijit/_Widget',
-        'mxui/dom', 'dojo/dom-class', 'dojo/dom-construct', 'dojo/_base/lang', 'dojo/number', 'dojo/_base/array', 'dojo/date/locale'
+        'dojo/dom-class', 'dojo/dom-construct', 'dojo/_base/lang', 'dojo/number', 'dojo/_base/array', 'dojo/date/locale'
 
-    ], function (declare, _WidgetBase, _Widget, domMx, domClass, domConstruct, lang, dojoNumber, dojoArray, dojoDateLocale) {
+    ], function (declare, _WidgetBase, _Widget, domClass, domConstruct, lang, dojoNumber, dojoArray, dojoDateLocale) {
 
         // Declare widget.
         return declare('PivotDataWidget.widget.PivotDataWidget', [ _WidgetBase, _Widget ], {
@@ -182,9 +182,8 @@
                         this.buildTableData();
                         this.createTable();
                     } else {
-                        domConstruct.create("<p>" + this.noDataText + "</p>");
+                        noDataNode = domConstruct.create("p", { innerHTML: this.noDataText }, this.domNode);
                         domClass.add(noDataNode, this.noDataTextClass);
-                        this.domNode.appendChild(noDataNode);
                     }
                 }
 
@@ -743,9 +742,8 @@
                     yIdValue = this.yKeyArray[rowIndex].idValue;
 
                     // The row label
-                    node = domMx.th(yLabelValue);
+                    node = domConstruct.create("th", { innerHTML: yLabelValue }, rowNode);
                     domClass.add(node, this.yLabelClass);
-                    rowNode.appendChild(node);
 
                     // Columns                    
                     yTotal = 0;
@@ -869,9 +867,8 @@
                     // Footer row containing the totals for each column
                     footerRowNode = document.createElement("tr");
                     domClass.add(footerRowNode, this.totalRowClass);
-                    node = domMx.td(this.totalRowLabel);
+                    node = domConstruct.create("td", { innerHTML: this.totalRowLabel }, footerRowNode);
                     domClass.add(node, this.yLabelClass);
-                    footerRowNode.appendChild(node);
                     yTotal = 0;
                     for (colIndex = 0; colIndex < this.xKeyArray.length; colIndex = colIndex + 1) {
                         // Get the ID
@@ -932,7 +929,7 @@
                     spanNode;
 
                 // Create the span containing the header value
-                spanNode = domMx.span(headerValue);
+                spanNode = domConstruct.create("span", { innerHTML: headerValue });
 
                 // Create the div
                 divNode = document.createElement("div");
