@@ -110,7 +110,7 @@ public class GetDisplayNameResponse
 	/**
 	 * @return value of Result
 	 */
-	public final String getResult()
+	public final java.lang.String getResult()
 	{
 		return getResult(getContext());
 	}
@@ -119,16 +119,16 @@ public class GetDisplayNameResponse
 	 * @param context
 	 * @return value of Result
 	 */
-	public final String getResult(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getResult(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.Result.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Result.toString());
 	}
 
 	/**
 	 * Set value of Result
 	 * @param result
 	 */
-	public final void setResult(String result)
+	public final void setResult(java.lang.String result)
 	{
 		setResult(getContext(), result);
 	}
@@ -138,7 +138,7 @@ public class GetDisplayNameResponse
 	 * @param context
 	 * @param result
 	 */
-	public final void setResult(com.mendix.systemwideinterfaces.core.IContext context, String result)
+	public final void setResult(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String result)
 	{
 		getMendixObject().setValue(context, MemberNames.Result.toString(), result);
 	}

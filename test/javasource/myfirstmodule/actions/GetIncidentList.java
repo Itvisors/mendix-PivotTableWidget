@@ -75,7 +75,7 @@ public class GetIncidentList extends CustomJavaAction<java.util.List<IMendixObje
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public String toString()
+	public java.lang.String toString()
 	{
 		return "GetIncidentList";
 	}

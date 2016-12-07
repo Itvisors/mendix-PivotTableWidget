@@ -121,7 +121,7 @@ public class EmployeeCarrierRelation
 	/**
 	 * @return value of Description
 	 */
-	public final String getDescription()
+	public final java.lang.String getDescription()
 	{
 		return getDescription(getContext());
 	}
@@ -130,16 +130,16 @@ public class EmployeeCarrierRelation
 	 * @param context
 	 * @return value of Description
 	 */
-	public final String getDescription(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getDescription(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.Description.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Description.toString());
 	}
 
 	/**
 	 * Set value of Description
 	 * @param description
 	 */
-	public final void setDescription(String description)
+	public final void setDescription(java.lang.String description)
 	{
 		setDescription(getContext(), description);
 	}
@@ -149,7 +149,7 @@ public class EmployeeCarrierRelation
 	 * @param context
 	 * @param description
 	 */
-	public final void setDescription(com.mendix.systemwideinterfaces.core.IContext context, String description)
+	public final void setDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String description)
 	{
 		getMendixObject().setValue(context, MemberNames.Description.toString(), description);
 	}

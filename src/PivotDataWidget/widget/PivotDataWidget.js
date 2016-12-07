@@ -182,7 +182,7 @@
                         this.buildTableData();
                         this.createTable();
                     } else {
-                        noDataNode = domMx.p(this.noDataText);
+                        domConstruct.create("<p>" + this.noDataText + "</p>");
                         domClass.add(noDataNode, this.noDataTextClass);
                         this.domNode.appendChild(noDataNode);
                     }
@@ -357,13 +357,12 @@
                     i,
                     listNode;
 
-                this.domNode.appendChild(domMx.p("Configuration error(s) found"));
+                domConstruct.create("p", { innerHTML: "Configuration error(s) found" }, this.domNode);
                 domClass.add(this.domNode, "PivotDataWidgetConfigurationError");
-                listNode = document.createElement("ul");
+                listNode = domConstruct.create("ul", null, this.domNode);
                 for (i = 0; i < errorMessageArray.length; i = i + 1) {
-                    listNode.appendChild(domMx.li(errorMessageArray[i]));
+                    domConstruct.create("li", { innerHTML: errorMessageArray[i] }, listNode);
                 }
-                this.domNode.appendChild(listNode);
             },
 
 

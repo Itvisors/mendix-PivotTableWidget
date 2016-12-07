@@ -110,7 +110,7 @@ public class ExportCsv
 	/**
 	 * @return value of CsvData
 	 */
-	public final String getCsvData()
+	public final java.lang.String getCsvData()
 	{
 		return getCsvData(getContext());
 	}
@@ -119,16 +119,16 @@ public class ExportCsv
 	 * @param context
 	 * @return value of CsvData
 	 */
-	public final String getCsvData(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getCsvData(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.CsvData.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.CsvData.toString());
 	}
 
 	/**
 	 * Set value of CsvData
 	 * @param csvdata
 	 */
-	public final void setCsvData(String csvdata)
+	public final void setCsvData(java.lang.String csvdata)
 	{
 		setCsvData(getContext(), csvdata);
 	}
@@ -138,7 +138,7 @@ public class ExportCsv
 	 * @param context
 	 * @param csvdata
 	 */
-	public final void setCsvData(com.mendix.systemwideinterfaces.core.IContext context, String csvdata)
+	public final void setCsvData(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String csvdata)
 	{
 		getMendixObject().setValue(context, MemberNames.CsvData.toString(), csvdata);
 	}

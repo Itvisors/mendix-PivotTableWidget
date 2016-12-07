@@ -159,7 +159,7 @@ public class Incident
 	/**
 	 * @return value of incidentTitle
 	 */
-	public final String getincidentTitle()
+	public final java.lang.String getincidentTitle()
 	{
 		return getincidentTitle(getContext());
 	}
@@ -168,16 +168,16 @@ public class Incident
 	 * @param context
 	 * @return value of incidentTitle
 	 */
-	public final String getincidentTitle(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getincidentTitle(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.incidentTitle.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.incidentTitle.toString());
 	}
 
 	/**
 	 * Set value of incidentTitle
 	 * @param incidenttitle
 	 */
-	public final void setincidentTitle(String incidenttitle)
+	public final void setincidentTitle(java.lang.String incidenttitle)
 	{
 		setincidentTitle(getContext(), incidenttitle);
 	}
@@ -187,7 +187,7 @@ public class Incident
 	 * @param context
 	 * @param incidenttitle
 	 */
-	public final void setincidentTitle(com.mendix.systemwideinterfaces.core.IContext context, String incidenttitle)
+	public final void setincidentTitle(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String incidenttitle)
 	{
 		getMendixObject().setValue(context, MemberNames.incidentTitle.toString(), incidenttitle);
 	}
@@ -195,7 +195,7 @@ public class Incident
 	/**
 	 * @return value of incidentDescription
 	 */
-	public final String getincidentDescription()
+	public final java.lang.String getincidentDescription()
 	{
 		return getincidentDescription(getContext());
 	}
@@ -204,16 +204,16 @@ public class Incident
 	 * @param context
 	 * @return value of incidentDescription
 	 */
-	public final String getincidentDescription(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getincidentDescription(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.incidentDescription.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.incidentDescription.toString());
 	}
 
 	/**
 	 * Set value of incidentDescription
 	 * @param incidentdescription
 	 */
-	public final void setincidentDescription(String incidentdescription)
+	public final void setincidentDescription(java.lang.String incidentdescription)
 	{
 		setincidentDescription(getContext(), incidentdescription);
 	}
@@ -223,7 +223,7 @@ public class Incident
 	 * @param context
 	 * @param incidentdescription
 	 */
-	public final void setincidentDescription(com.mendix.systemwideinterfaces.core.IContext context, String incidentdescription)
+	public final void setincidentDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String incidentdescription)
 	{
 		getMendixObject().setValue(context, MemberNames.incidentDescription.toString(), incidentdescription);
 	}

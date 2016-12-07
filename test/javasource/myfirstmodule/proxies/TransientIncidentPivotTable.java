@@ -153,7 +153,7 @@ public class TransientIncidentPivotTable
 	/**
 	 * @return value of categoryNumber
 	 */
-	public final Long getcategoryNumber()
+	public final java.lang.Long getcategoryNumber()
 	{
 		return getcategoryNumber(getContext());
 	}
@@ -162,16 +162,16 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @return value of categoryNumber
 	 */
-	public final Long getcategoryNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Long getcategoryNumber(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Long) getMendixObject().getValue(context, MemberNames.categoryNumber.toString());
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.categoryNumber.toString());
 	}
 
 	/**
 	 * Set value of categoryNumber
 	 * @param categorynumber
 	 */
-	public final void setcategoryNumber(Long categorynumber)
+	public final void setcategoryNumber(java.lang.Long categorynumber)
 	{
 		setcategoryNumber(getContext(), categorynumber);
 	}
@@ -181,7 +181,7 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @param categorynumber
 	 */
-	public final void setcategoryNumber(com.mendix.systemwideinterfaces.core.IContext context, Long categorynumber)
+	public final void setcategoryNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long categorynumber)
 	{
 		getMendixObject().setValue(context, MemberNames.categoryNumber.toString(), categorynumber);
 	}
@@ -189,7 +189,7 @@ public class TransientIncidentPivotTable
 	/**
 	 * @return value of categoryName
 	 */
-	public final String getcategoryName()
+	public final java.lang.String getcategoryName()
 	{
 		return getcategoryName(getContext());
 	}
@@ -198,16 +198,16 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @return value of categoryName
 	 */
-	public final String getcategoryName(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getcategoryName(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.categoryName.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.categoryName.toString());
 	}
 
 	/**
 	 * Set value of categoryName
 	 * @param categoryname
 	 */
-	public final void setcategoryName(String categoryname)
+	public final void setcategoryName(java.lang.String categoryname)
 	{
 		setcategoryName(getContext(), categoryname);
 	}
@@ -217,7 +217,7 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @param categoryname
 	 */
-	public final void setcategoryName(com.mendix.systemwideinterfaces.core.IContext context, String categoryname)
+	public final void setcategoryName(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String categoryname)
 	{
 		getMendixObject().setValue(context, MemberNames.categoryName.toString(), categoryname);
 	}
@@ -225,7 +225,7 @@ public class TransientIncidentPivotTable
 	/**
 	 * @return value of carrierNumber
 	 */
-	public final Long getcarrierNumber()
+	public final java.lang.Long getcarrierNumber()
 	{
 		return getcarrierNumber(getContext());
 	}
@@ -234,16 +234,16 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @return value of carrierNumber
 	 */
-	public final Long getcarrierNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Long getcarrierNumber(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Long) getMendixObject().getValue(context, MemberNames.carrierNumber.toString());
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.carrierNumber.toString());
 	}
 
 	/**
 	 * Set value of carrierNumber
 	 * @param carriernumber
 	 */
-	public final void setcarrierNumber(Long carriernumber)
+	public final void setcarrierNumber(java.lang.Long carriernumber)
 	{
 		setcarrierNumber(getContext(), carriernumber);
 	}
@@ -253,7 +253,7 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @param carriernumber
 	 */
-	public final void setcarrierNumber(com.mendix.systemwideinterfaces.core.IContext context, Long carriernumber)
+	public final void setcarrierNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long carriernumber)
 	{
 		getMendixObject().setValue(context, MemberNames.carrierNumber.toString(), carriernumber);
 	}
@@ -261,7 +261,7 @@ public class TransientIncidentPivotTable
 	/**
 	 * @return value of carrierName
 	 */
-	public final String getcarrierName()
+	public final java.lang.String getcarrierName()
 	{
 		return getcarrierName(getContext());
 	}
@@ -270,16 +270,16 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @return value of carrierName
 	 */
-	public final String getcarrierName(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getcarrierName(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.carrierName.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.carrierName.toString());
 	}
 
 	/**
 	 * Set value of carrierName
 	 * @param carriername
 	 */
-	public final void setcarrierName(String carriername)
+	public final void setcarrierName(java.lang.String carriername)
 	{
 		setcarrierName(getContext(), carriername);
 	}
@@ -289,7 +289,7 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @param carriername
 	 */
-	public final void setcarrierName(com.mendix.systemwideinterfaces.core.IContext context, String carriername)
+	public final void setcarrierName(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String carriername)
 	{
 		getMendixObject().setValue(context, MemberNames.carrierName.toString(), carriername);
 	}
@@ -297,7 +297,7 @@ public class TransientIncidentPivotTable
 	/**
 	 * @return value of employeeNumber
 	 */
-	public final Long getemployeeNumber()
+	public final java.lang.Long getemployeeNumber()
 	{
 		return getemployeeNumber(getContext());
 	}
@@ -306,16 +306,16 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @return value of employeeNumber
 	 */
-	public final Long getemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Long getemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Long) getMendixObject().getValue(context, MemberNames.employeeNumber.toString());
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.employeeNumber.toString());
 	}
 
 	/**
 	 * Set value of employeeNumber
 	 * @param employeenumber
 	 */
-	public final void setemployeeNumber(Long employeenumber)
+	public final void setemployeeNumber(java.lang.Long employeenumber)
 	{
 		setemployeeNumber(getContext(), employeenumber);
 	}
@@ -325,7 +325,7 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @param employeenumber
 	 */
-	public final void setemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context, Long employeenumber)
+	public final void setemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long employeenumber)
 	{
 		getMendixObject().setValue(context, MemberNames.employeeNumber.toString(), employeenumber);
 	}
@@ -333,7 +333,7 @@ public class TransientIncidentPivotTable
 	/**
 	 * @return value of employeeName
 	 */
-	public final String getemployeeName()
+	public final java.lang.String getemployeeName()
 	{
 		return getemployeeName(getContext());
 	}
@@ -342,16 +342,16 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @return value of employeeName
 	 */
-	public final String getemployeeName(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getemployeeName(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.employeeName.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.employeeName.toString());
 	}
 
 	/**
 	 * Set value of employeeName
 	 * @param employeename
 	 */
-	public final void setemployeeName(String employeename)
+	public final void setemployeeName(java.lang.String employeename)
 	{
 		setemployeeName(getContext(), employeename);
 	}
@@ -361,7 +361,7 @@ public class TransientIncidentPivotTable
 	 * @param context
 	 * @param employeename
 	 */
-	public final void setemployeeName(com.mendix.systemwideinterfaces.core.IContext context, String employeename)
+	public final void setemployeeName(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String employeename)
 	{
 		getMendixObject().setValue(context, MemberNames.employeeName.toString(), employeename);
 	}

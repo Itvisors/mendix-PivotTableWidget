@@ -13,7 +13,7 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.webui.CustomJavaAction;
 
-public class TransientRotatedColumnHeaderData_CreateCssAction extends CustomJavaAction<Boolean>
+public class TransientRotatedColumnHeaderData_CreateCssAction extends CustomJavaAction<java.lang.Boolean>
 {
 	private IMendixObject __data;
 	private myfirstmodule.proxies.TransientRotatedColumnHeaderData data;
@@ -25,7 +25,7 @@ public class TransientRotatedColumnHeaderData_CreateCssAction extends CustomJava
 	}
 
 	@Override
-	public Boolean executeAction() throws Exception
+	public java.lang.Boolean executeAction() throws Exception
 	{
 		this.data = __data == null ? null : myfirstmodule.proxies.TransientRotatedColumnHeaderData.initialize(getContext(), __data);
 
@@ -91,7 +91,7 @@ public class TransientRotatedColumnHeaderData_CreateCssAction extends CustomJava
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public String toString()
+	public java.lang.String toString()
 	{
 		return "TransientRotatedColumnHeaderData_CreateCssAction";
 	}

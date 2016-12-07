@@ -15,18 +15,18 @@ import com.mendix.webui.CustomJavaAction;
 /**
  * Generate a random integer based on the supplied maximum value
  */
-public class GenerateRandomInteger extends CustomJavaAction<Long>
+public class GenerateRandomInteger extends CustomJavaAction<java.lang.Long>
 {
-	private Long maxValue;
+	private java.lang.Long maxValue;
 
-	public GenerateRandomInteger(IContext context, Long maxValue)
+	public GenerateRandomInteger(IContext context, java.lang.Long maxValue)
 	{
 		super(context);
 		this.maxValue = maxValue;
 	}
 
 	@Override
-	public Long executeAction() throws Exception
+	public java.lang.Long executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		long result;
@@ -42,7 +42,7 @@ public class GenerateRandomInteger extends CustomJavaAction<Long>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public String toString()
+	public java.lang.String toString()
 	{
 		return "GenerateRandomInteger";
 	}

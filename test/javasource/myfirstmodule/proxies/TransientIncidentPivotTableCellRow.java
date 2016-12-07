@@ -151,7 +151,7 @@ public class TransientIncidentPivotTableCellRow
 	/**
 	 * @return value of incidentTitle
 	 */
-	public final String getincidentTitle()
+	public final java.lang.String getincidentTitle()
 	{
 		return getincidentTitle(getContext());
 	}
@@ -160,16 +160,16 @@ public class TransientIncidentPivotTableCellRow
 	 * @param context
 	 * @return value of incidentTitle
 	 */
-	public final String getincidentTitle(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getincidentTitle(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.incidentTitle.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.incidentTitle.toString());
 	}
 
 	/**
 	 * Set value of incidentTitle
 	 * @param incidenttitle
 	 */
-	public final void setincidentTitle(String incidenttitle)
+	public final void setincidentTitle(java.lang.String incidenttitle)
 	{
 		setincidentTitle(getContext(), incidenttitle);
 	}
@@ -179,7 +179,7 @@ public class TransientIncidentPivotTableCellRow
 	 * @param context
 	 * @param incidenttitle
 	 */
-	public final void setincidentTitle(com.mendix.systemwideinterfaces.core.IContext context, String incidenttitle)
+	public final void setincidentTitle(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String incidenttitle)
 	{
 		getMendixObject().setValue(context, MemberNames.incidentTitle.toString(), incidenttitle);
 	}
@@ -187,7 +187,7 @@ public class TransientIncidentPivotTableCellRow
 	/**
 	 * @return value of incidentDescription
 	 */
-	public final String getincidentDescription()
+	public final java.lang.String getincidentDescription()
 	{
 		return getincidentDescription(getContext());
 	}
@@ -196,16 +196,16 @@ public class TransientIncidentPivotTableCellRow
 	 * @param context
 	 * @return value of incidentDescription
 	 */
-	public final String getincidentDescription(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getincidentDescription(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.incidentDescription.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.incidentDescription.toString());
 	}
 
 	/**
 	 * Set value of incidentDescription
 	 * @param incidentdescription
 	 */
-	public final void setincidentDescription(String incidentdescription)
+	public final void setincidentDescription(java.lang.String incidentdescription)
 	{
 		setincidentDescription(getContext(), incidentdescription);
 	}
@@ -215,7 +215,7 @@ public class TransientIncidentPivotTableCellRow
 	 * @param context
 	 * @param incidentdescription
 	 */
-	public final void setincidentDescription(com.mendix.systemwideinterfaces.core.IContext context, String incidentdescription)
+	public final void setincidentDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String incidentdescription)
 	{
 		getMendixObject().setValue(context, MemberNames.incidentDescription.toString(), incidentdescription);
 	}
@@ -223,7 +223,7 @@ public class TransientIncidentPivotTableCellRow
 	/**
 	 * @return value of employeeNumber
 	 */
-	public final Long getemployeeNumber()
+	public final java.lang.Long getemployeeNumber()
 	{
 		return getemployeeNumber(getContext());
 	}
@@ -232,16 +232,16 @@ public class TransientIncidentPivotTableCellRow
 	 * @param context
 	 * @return value of employeeNumber
 	 */
-	public final Long getemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Long getemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Long) getMendixObject().getValue(context, MemberNames.employeeNumber.toString());
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.employeeNumber.toString());
 	}
 
 	/**
 	 * Set value of employeeNumber
 	 * @param employeenumber
 	 */
-	public final void setemployeeNumber(Long employeenumber)
+	public final void setemployeeNumber(java.lang.Long employeenumber)
 	{
 		setemployeeNumber(getContext(), employeenumber);
 	}
@@ -251,7 +251,7 @@ public class TransientIncidentPivotTableCellRow
 	 * @param context
 	 * @param employeenumber
 	 */
-	public final void setemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context, Long employeenumber)
+	public final void setemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long employeenumber)
 	{
 		getMendixObject().setValue(context, MemberNames.employeeNumber.toString(), employeenumber);
 	}
@@ -259,7 +259,7 @@ public class TransientIncidentPivotTableCellRow
 	/**
 	 * @return value of employeeName
 	 */
-	public final String getemployeeName()
+	public final java.lang.String getemployeeName()
 	{
 		return getemployeeName(getContext());
 	}
@@ -268,16 +268,16 @@ public class TransientIncidentPivotTableCellRow
 	 * @param context
 	 * @return value of employeeName
 	 */
-	public final String getemployeeName(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getemployeeName(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.employeeName.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.employeeName.toString());
 	}
 
 	/**
 	 * Set value of employeeName
 	 * @param employeename
 	 */
-	public final void setemployeeName(String employeename)
+	public final void setemployeeName(java.lang.String employeename)
 	{
 		setemployeeName(getContext(), employeename);
 	}
@@ -287,7 +287,7 @@ public class TransientIncidentPivotTableCellRow
 	 * @param context
 	 * @param employeename
 	 */
-	public final void setemployeeName(com.mendix.systemwideinterfaces.core.IContext context, String employeename)
+	public final void setemployeeName(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String employeename)
 	{
 		getMendixObject().setValue(context, MemberNames.employeeName.toString(), employeename);
 	}

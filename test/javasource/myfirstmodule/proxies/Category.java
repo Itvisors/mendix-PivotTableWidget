@@ -119,7 +119,7 @@ public class Category
 	/**
 	 * @return value of number
 	 */
-	public final Long getnumber()
+	public final java.lang.Long getnumber()
 	{
 		return getnumber(getContext());
 	}
@@ -128,16 +128,16 @@ public class Category
 	 * @param context
 	 * @return value of number
 	 */
-	public final Long getnumber(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Long getnumber(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Long) getMendixObject().getValue(context, MemberNames.number.toString());
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.number.toString());
 	}
 
 	/**
 	 * Set value of number
 	 * @param number
 	 */
-	public final void setnumber(Long number)
+	public final void setnumber(java.lang.Long number)
 	{
 		setnumber(getContext(), number);
 	}
@@ -147,7 +147,7 @@ public class Category
 	 * @param context
 	 * @param number
 	 */
-	public final void setnumber(com.mendix.systemwideinterfaces.core.IContext context, Long number)
+	public final void setnumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long number)
 	{
 		getMendixObject().setValue(context, MemberNames.number.toString(), number);
 	}
@@ -155,7 +155,7 @@ public class Category
 	/**
 	 * @return value of name
 	 */
-	public final String getname()
+	public final java.lang.String getname()
 	{
 		return getname(getContext());
 	}
@@ -164,16 +164,16 @@ public class Category
 	 * @param context
 	 * @return value of name
 	 */
-	public final String getname(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getname(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.name.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.name.toString());
 	}
 
 	/**
 	 * Set value of name
 	 * @param name
 	 */
-	public final void setname(String name)
+	public final void setname(java.lang.String name)
 	{
 		setname(getContext(), name);
 	}
@@ -183,7 +183,7 @@ public class Category
 	 * @param context
 	 * @param name
 	 */
-	public final void setname(com.mendix.systemwideinterfaces.core.IContext context, String name)
+	public final void setname(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String name)
 	{
 		getMendixObject().setValue(context, MemberNames.name.toString(), name);
 	}

@@ -91,7 +91,7 @@ public class Account extends system.proxies.User
 	/**
 	 * @return value of FullName
 	 */
-	public final String getFullName()
+	public final java.lang.String getFullName()
 	{
 		return getFullName(getContext());
 	}
@@ -100,16 +100,16 @@ public class Account extends system.proxies.User
 	 * @param context
 	 * @return value of FullName
 	 */
-	public final String getFullName(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getFullName(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.FullName.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.FullName.toString());
 	}
 
 	/**
 	 * Set value of FullName
 	 * @param fullname
 	 */
-	public final void setFullName(String fullname)
+	public final void setFullName(java.lang.String fullname)
 	{
 		setFullName(getContext(), fullname);
 	}
@@ -119,7 +119,7 @@ public class Account extends system.proxies.User
 	 * @param context
 	 * @param fullname
 	 */
-	public final void setFullName(com.mendix.systemwideinterfaces.core.IContext context, String fullname)
+	public final void setFullName(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String fullname)
 	{
 		getMendixObject().setValue(context, MemberNames.FullName.toString(), fullname);
 	}
@@ -127,7 +127,7 @@ public class Account extends system.proxies.User
 	/**
 	 * @return value of IsLocalUser
 	 */
-	public final Boolean getIsLocalUser()
+	public final java.lang.Boolean getIsLocalUser()
 	{
 		return getIsLocalUser(getContext());
 	}
@@ -136,16 +136,16 @@ public class Account extends system.proxies.User
 	 * @param context
 	 * @return value of IsLocalUser
 	 */
-	public final Boolean getIsLocalUser(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Boolean getIsLocalUser(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Boolean) getMendixObject().getValue(context, MemberNames.IsLocalUser.toString());
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.IsLocalUser.toString());
 	}
 
 	/**
 	 * Set value of IsLocalUser
 	 * @param islocaluser
 	 */
-	public final void setIsLocalUser(Boolean islocaluser)
+	public final void setIsLocalUser(java.lang.Boolean islocaluser)
 	{
 		setIsLocalUser(getContext(), islocaluser);
 	}
@@ -155,7 +155,7 @@ public class Account extends system.proxies.User
 	 * @param context
 	 * @param islocaluser
 	 */
-	public final void setIsLocalUser(com.mendix.systemwideinterfaces.core.IContext context, Boolean islocaluser)
+	public final void setIsLocalUser(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean islocaluser)
 	{
 		getMendixObject().setValue(context, MemberNames.IsLocalUser.toString(), islocaluser);
 	}

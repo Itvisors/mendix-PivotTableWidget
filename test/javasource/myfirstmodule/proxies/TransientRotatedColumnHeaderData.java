@@ -122,7 +122,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of RotationDegree
 	 */
-	public final Integer getRotationDegree()
+	public final java.lang.Integer getRotationDegree()
 	{
 		return getRotationDegree(getContext());
 	}
@@ -131,16 +131,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of RotationDegree
 	 */
-	public final Integer getRotationDegree(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Integer getRotationDegree(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Integer) getMendixObject().getValue(context, MemberNames.RotationDegree.toString());
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.RotationDegree.toString());
 	}
 
 	/**
 	 * Set value of RotationDegree
 	 * @param rotationdegree
 	 */
-	public final void setRotationDegree(Integer rotationdegree)
+	public final void setRotationDegree(java.lang.Integer rotationdegree)
 	{
 		setRotationDegree(getContext(), rotationdegree);
 	}
@@ -150,7 +150,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param rotationdegree
 	 */
-	public final void setRotationDegree(com.mendix.systemwideinterfaces.core.IContext context, Integer rotationdegree)
+	public final void setRotationDegree(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer rotationdegree)
 	{
 		getMendixObject().setValue(context, MemberNames.RotationDegree.toString(), rotationdegree);
 	}
@@ -158,7 +158,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of CellWidth
 	 */
-	public final Integer getCellWidth()
+	public final java.lang.Integer getCellWidth()
 	{
 		return getCellWidth(getContext());
 	}
@@ -167,16 +167,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of CellWidth
 	 */
-	public final Integer getCellWidth(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Integer getCellWidth(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Integer) getMendixObject().getValue(context, MemberNames.CellWidth.toString());
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.CellWidth.toString());
 	}
 
 	/**
 	 * Set value of CellWidth
 	 * @param cellwidth
 	 */
-	public final void setCellWidth(Integer cellwidth)
+	public final void setCellWidth(java.lang.Integer cellwidth)
 	{
 		setCellWidth(getContext(), cellwidth);
 	}
@@ -186,7 +186,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param cellwidth
 	 */
-	public final void setCellWidth(com.mendix.systemwideinterfaces.core.IContext context, Integer cellwidth)
+	public final void setCellWidth(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer cellwidth)
 	{
 		getMendixObject().setValue(context, MemberNames.CellWidth.toString(), cellwidth);
 	}
@@ -194,7 +194,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of HeaderHeight
 	 */
-	public final Integer getHeaderHeight()
+	public final java.lang.Integer getHeaderHeight()
 	{
 		return getHeaderHeight(getContext());
 	}
@@ -203,16 +203,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of HeaderHeight
 	 */
-	public final Integer getHeaderHeight(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Integer getHeaderHeight(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Integer) getMendixObject().getValue(context, MemberNames.HeaderHeight.toString());
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.HeaderHeight.toString());
 	}
 
 	/**
 	 * Set value of HeaderHeight
 	 * @param headerheight
 	 */
-	public final void setHeaderHeight(Integer headerheight)
+	public final void setHeaderHeight(java.lang.Integer headerheight)
 	{
 		setHeaderHeight(getContext(), headerheight);
 	}
@@ -222,7 +222,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param headerheight
 	 */
-	public final void setHeaderHeight(com.mendix.systemwideinterfaces.core.IContext context, Integer headerheight)
+	public final void setHeaderHeight(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer headerheight)
 	{
 		getMendixObject().setValue(context, MemberNames.HeaderHeight.toString(), headerheight);
 	}
@@ -230,7 +230,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of HeaderLabelLeft
 	 */
-	public final Integer getHeaderLabelLeft()
+	public final java.lang.Integer getHeaderLabelLeft()
 	{
 		return getHeaderLabelLeft(getContext());
 	}
@@ -239,16 +239,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of HeaderLabelLeft
 	 */
-	public final Integer getHeaderLabelLeft(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Integer getHeaderLabelLeft(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Integer) getMendixObject().getValue(context, MemberNames.HeaderLabelLeft.toString());
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.HeaderLabelLeft.toString());
 	}
 
 	/**
 	 * Set value of HeaderLabelLeft
 	 * @param headerlabelleft
 	 */
-	public final void setHeaderLabelLeft(Integer headerlabelleft)
+	public final void setHeaderLabelLeft(java.lang.Integer headerlabelleft)
 	{
 		setHeaderLabelLeft(getContext(), headerlabelleft);
 	}
@@ -258,7 +258,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param headerlabelleft
 	 */
-	public final void setHeaderLabelLeft(com.mendix.systemwideinterfaces.core.IContext context, Integer headerlabelleft)
+	public final void setHeaderLabelLeft(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer headerlabelleft)
 	{
 		getMendixObject().setValue(context, MemberNames.HeaderLabelLeft.toString(), headerlabelleft);
 	}
@@ -266,7 +266,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of HeaderLabelBottom
 	 */
-	public final Integer getHeaderLabelBottom()
+	public final java.lang.Integer getHeaderLabelBottom()
 	{
 		return getHeaderLabelBottom(getContext());
 	}
@@ -275,16 +275,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of HeaderLabelBottom
 	 */
-	public final Integer getHeaderLabelBottom(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Integer getHeaderLabelBottom(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Integer) getMendixObject().getValue(context, MemberNames.HeaderLabelBottom.toString());
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.HeaderLabelBottom.toString());
 	}
 
 	/**
 	 * Set value of HeaderLabelBottom
 	 * @param headerlabelbottom
 	 */
-	public final void setHeaderLabelBottom(Integer headerlabelbottom)
+	public final void setHeaderLabelBottom(java.lang.Integer headerlabelbottom)
 	{
 		setHeaderLabelBottom(getContext(), headerlabelbottom);
 	}
@@ -294,7 +294,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param headerlabelbottom
 	 */
-	public final void setHeaderLabelBottom(com.mendix.systemwideinterfaces.core.IContext context, Integer headerlabelbottom)
+	public final void setHeaderLabelBottom(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer headerlabelbottom)
 	{
 		getMendixObject().setValue(context, MemberNames.HeaderLabelBottom.toString(), headerlabelbottom);
 	}
@@ -302,7 +302,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of InputCssTableCell
 	 */
-	public final String getInputCssTableCell()
+	public final java.lang.String getInputCssTableCell()
 	{
 		return getInputCssTableCell(getContext());
 	}
@@ -311,16 +311,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of InputCssTableCell
 	 */
-	public final String getInputCssTableCell(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getInputCssTableCell(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.InputCssTableCell.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.InputCssTableCell.toString());
 	}
 
 	/**
 	 * Set value of InputCssTableCell
 	 * @param inputcsstablecell
 	 */
-	public final void setInputCssTableCell(String inputcsstablecell)
+	public final void setInputCssTableCell(java.lang.String inputcsstablecell)
 	{
 		setInputCssTableCell(getContext(), inputcsstablecell);
 	}
@@ -330,7 +330,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param inputcsstablecell
 	 */
-	public final void setInputCssTableCell(com.mendix.systemwideinterfaces.core.IContext context, String inputcsstablecell)
+	public final void setInputCssTableCell(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String inputcsstablecell)
 	{
 		getMendixObject().setValue(context, MemberNames.InputCssTableCell.toString(), inputcsstablecell);
 	}
@@ -338,7 +338,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of InputCssHeaderTh
 	 */
-	public final String getInputCssHeaderTh()
+	public final java.lang.String getInputCssHeaderTh()
 	{
 		return getInputCssHeaderTh(getContext());
 	}
@@ -347,16 +347,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of InputCssHeaderTh
 	 */
-	public final String getInputCssHeaderTh(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getInputCssHeaderTh(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.InputCssHeaderTh.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.InputCssHeaderTh.toString());
 	}
 
 	/**
 	 * Set value of InputCssHeaderTh
 	 * @param inputcssheaderth
 	 */
-	public final void setInputCssHeaderTh(String inputcssheaderth)
+	public final void setInputCssHeaderTh(java.lang.String inputcssheaderth)
 	{
 		setInputCssHeaderTh(getContext(), inputcssheaderth);
 	}
@@ -366,7 +366,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param inputcssheaderth
 	 */
-	public final void setInputCssHeaderTh(com.mendix.systemwideinterfaces.core.IContext context, String inputcssheaderth)
+	public final void setInputCssHeaderTh(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String inputcssheaderth)
 	{
 		getMendixObject().setValue(context, MemberNames.InputCssHeaderTh.toString(), inputcssheaderth);
 	}
@@ -374,7 +374,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of InputCssHeaderDiv
 	 */
-	public final String getInputCssHeaderDiv()
+	public final java.lang.String getInputCssHeaderDiv()
 	{
 		return getInputCssHeaderDiv(getContext());
 	}
@@ -383,16 +383,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of InputCssHeaderDiv
 	 */
-	public final String getInputCssHeaderDiv(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getInputCssHeaderDiv(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.InputCssHeaderDiv.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.InputCssHeaderDiv.toString());
 	}
 
 	/**
 	 * Set value of InputCssHeaderDiv
 	 * @param inputcssheaderdiv
 	 */
-	public final void setInputCssHeaderDiv(String inputcssheaderdiv)
+	public final void setInputCssHeaderDiv(java.lang.String inputcssheaderdiv)
 	{
 		setInputCssHeaderDiv(getContext(), inputcssheaderdiv);
 	}
@@ -402,7 +402,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param inputcssheaderdiv
 	 */
-	public final void setInputCssHeaderDiv(com.mendix.systemwideinterfaces.core.IContext context, String inputcssheaderdiv)
+	public final void setInputCssHeaderDiv(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String inputcssheaderdiv)
 	{
 		getMendixObject().setValue(context, MemberNames.InputCssHeaderDiv.toString(), inputcssheaderdiv);
 	}
@@ -410,7 +410,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of InputCssHeaderSpan
 	 */
-	public final String getInputCssHeaderSpan()
+	public final java.lang.String getInputCssHeaderSpan()
 	{
 		return getInputCssHeaderSpan(getContext());
 	}
@@ -419,16 +419,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of InputCssHeaderSpan
 	 */
-	public final String getInputCssHeaderSpan(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getInputCssHeaderSpan(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.InputCssHeaderSpan.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.InputCssHeaderSpan.toString());
 	}
 
 	/**
 	 * Set value of InputCssHeaderSpan
 	 * @param inputcssheaderspan
 	 */
-	public final void setInputCssHeaderSpan(String inputcssheaderspan)
+	public final void setInputCssHeaderSpan(java.lang.String inputcssheaderspan)
 	{
 		setInputCssHeaderSpan(getContext(), inputcssheaderspan);
 	}
@@ -438,7 +438,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param inputcssheaderspan
 	 */
-	public final void setInputCssHeaderSpan(com.mendix.systemwideinterfaces.core.IContext context, String inputcssheaderspan)
+	public final void setInputCssHeaderSpan(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String inputcssheaderspan)
 	{
 		getMendixObject().setValue(context, MemberNames.InputCssHeaderSpan.toString(), inputcssheaderspan);
 	}
@@ -446,7 +446,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of ResultCssTableCell
 	 */
-	public final String getResultCssTableCell()
+	public final java.lang.String getResultCssTableCell()
 	{
 		return getResultCssTableCell(getContext());
 	}
@@ -455,16 +455,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of ResultCssTableCell
 	 */
-	public final String getResultCssTableCell(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getResultCssTableCell(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.ResultCssTableCell.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ResultCssTableCell.toString());
 	}
 
 	/**
 	 * Set value of ResultCssTableCell
 	 * @param resultcsstablecell
 	 */
-	public final void setResultCssTableCell(String resultcsstablecell)
+	public final void setResultCssTableCell(java.lang.String resultcsstablecell)
 	{
 		setResultCssTableCell(getContext(), resultcsstablecell);
 	}
@@ -474,7 +474,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param resultcsstablecell
 	 */
-	public final void setResultCssTableCell(com.mendix.systemwideinterfaces.core.IContext context, String resultcsstablecell)
+	public final void setResultCssTableCell(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String resultcsstablecell)
 	{
 		getMendixObject().setValue(context, MemberNames.ResultCssTableCell.toString(), resultcsstablecell);
 	}
@@ -482,7 +482,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of ResultCssHeaderTh
 	 */
-	public final String getResultCssHeaderTh()
+	public final java.lang.String getResultCssHeaderTh()
 	{
 		return getResultCssHeaderTh(getContext());
 	}
@@ -491,16 +491,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of ResultCssHeaderTh
 	 */
-	public final String getResultCssHeaderTh(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getResultCssHeaderTh(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.ResultCssHeaderTh.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ResultCssHeaderTh.toString());
 	}
 
 	/**
 	 * Set value of ResultCssHeaderTh
 	 * @param resultcssheaderth
 	 */
-	public final void setResultCssHeaderTh(String resultcssheaderth)
+	public final void setResultCssHeaderTh(java.lang.String resultcssheaderth)
 	{
 		setResultCssHeaderTh(getContext(), resultcssheaderth);
 	}
@@ -510,7 +510,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param resultcssheaderth
 	 */
-	public final void setResultCssHeaderTh(com.mendix.systemwideinterfaces.core.IContext context, String resultcssheaderth)
+	public final void setResultCssHeaderTh(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String resultcssheaderth)
 	{
 		getMendixObject().setValue(context, MemberNames.ResultCssHeaderTh.toString(), resultcssheaderth);
 	}
@@ -518,7 +518,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of ResultCssHeaderDiv
 	 */
-	public final String getResultCssHeaderDiv()
+	public final java.lang.String getResultCssHeaderDiv()
 	{
 		return getResultCssHeaderDiv(getContext());
 	}
@@ -527,16 +527,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of ResultCssHeaderDiv
 	 */
-	public final String getResultCssHeaderDiv(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getResultCssHeaderDiv(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.ResultCssHeaderDiv.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ResultCssHeaderDiv.toString());
 	}
 
 	/**
 	 * Set value of ResultCssHeaderDiv
 	 * @param resultcssheaderdiv
 	 */
-	public final void setResultCssHeaderDiv(String resultcssheaderdiv)
+	public final void setResultCssHeaderDiv(java.lang.String resultcssheaderdiv)
 	{
 		setResultCssHeaderDiv(getContext(), resultcssheaderdiv);
 	}
@@ -546,7 +546,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param resultcssheaderdiv
 	 */
-	public final void setResultCssHeaderDiv(com.mendix.systemwideinterfaces.core.IContext context, String resultcssheaderdiv)
+	public final void setResultCssHeaderDiv(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String resultcssheaderdiv)
 	{
 		getMendixObject().setValue(context, MemberNames.ResultCssHeaderDiv.toString(), resultcssheaderdiv);
 	}
@@ -554,7 +554,7 @@ public class TransientRotatedColumnHeaderData
 	/**
 	 * @return value of ResultCssHeaderSpan
 	 */
-	public final String getResultCssHeaderSpan()
+	public final java.lang.String getResultCssHeaderSpan()
 	{
 		return getResultCssHeaderSpan(getContext());
 	}
@@ -563,16 +563,16 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @return value of ResultCssHeaderSpan
 	 */
-	public final String getResultCssHeaderSpan(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getResultCssHeaderSpan(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.ResultCssHeaderSpan.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ResultCssHeaderSpan.toString());
 	}
 
 	/**
 	 * Set value of ResultCssHeaderSpan
 	 * @param resultcssheaderspan
 	 */
-	public final void setResultCssHeaderSpan(String resultcssheaderspan)
+	public final void setResultCssHeaderSpan(java.lang.String resultcssheaderspan)
 	{
 		setResultCssHeaderSpan(getContext(), resultcssheaderspan);
 	}
@@ -582,7 +582,7 @@ public class TransientRotatedColumnHeaderData
 	 * @param context
 	 * @param resultcssheaderspan
 	 */
-	public final void setResultCssHeaderSpan(com.mendix.systemwideinterfaces.core.IContext context, String resultcssheaderspan)
+	public final void setResultCssHeaderSpan(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String resultcssheaderspan)
 	{
 		getMendixObject().setValue(context, MemberNames.ResultCssHeaderSpan.toString(), resultcssheaderspan);
 	}

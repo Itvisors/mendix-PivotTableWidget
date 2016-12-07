@@ -119,7 +119,7 @@ public class TransientSalesOrderPivotTable
 	/**
 	 * @return value of orderNumber
 	 */
-	public final Long getorderNumber()
+	public final java.lang.Long getorderNumber()
 	{
 		return getorderNumber(getContext());
 	}
@@ -128,16 +128,16 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @return value of orderNumber
 	 */
-	public final Long getorderNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Long getorderNumber(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Long) getMendixObject().getValue(context, MemberNames.orderNumber.toString());
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.orderNumber.toString());
 	}
 
 	/**
 	 * Set value of orderNumber
 	 * @param ordernumber
 	 */
-	public final void setorderNumber(Long ordernumber)
+	public final void setorderNumber(java.lang.Long ordernumber)
 	{
 		setorderNumber(getContext(), ordernumber);
 	}
@@ -147,7 +147,7 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @param ordernumber
 	 */
-	public final void setorderNumber(com.mendix.systemwideinterfaces.core.IContext context, Long ordernumber)
+	public final void setorderNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long ordernumber)
 	{
 		getMendixObject().setValue(context, MemberNames.orderNumber.toString(), ordernumber);
 	}
@@ -191,7 +191,7 @@ public class TransientSalesOrderPivotTable
 	/**
 	 * @return value of period
 	 */
-	public final String getperiod()
+	public final java.lang.String getperiod()
 	{
 		return getperiod(getContext());
 	}
@@ -200,16 +200,16 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @return value of period
 	 */
-	public final String getperiod(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getperiod(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.period.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.period.toString());
 	}
 
 	/**
 	 * Set value of period
 	 * @param period
 	 */
-	public final void setperiod(String period)
+	public final void setperiod(java.lang.String period)
 	{
 		setperiod(getContext(), period);
 	}
@@ -219,7 +219,7 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @param period
 	 */
-	public final void setperiod(com.mendix.systemwideinterfaces.core.IContext context, String period)
+	public final void setperiod(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String period)
 	{
 		getMendixObject().setValue(context, MemberNames.period.toString(), period);
 	}
@@ -263,7 +263,7 @@ public class TransientSalesOrderPivotTable
 	/**
 	 * @return value of itemCount
 	 */
-	public final Integer getitemCount()
+	public final java.lang.Integer getitemCount()
 	{
 		return getitemCount(getContext());
 	}
@@ -272,16 +272,16 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @return value of itemCount
 	 */
-	public final Integer getitemCount(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Integer getitemCount(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Integer) getMendixObject().getValue(context, MemberNames.itemCount.toString());
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.itemCount.toString());
 	}
 
 	/**
 	 * Set value of itemCount
 	 * @param itemcount
 	 */
-	public final void setitemCount(Integer itemcount)
+	public final void setitemCount(java.lang.Integer itemcount)
 	{
 		setitemCount(getContext(), itemcount);
 	}
@@ -291,7 +291,7 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @param itemcount
 	 */
-	public final void setitemCount(com.mendix.systemwideinterfaces.core.IContext context, Integer itemcount)
+	public final void setitemCount(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer itemcount)
 	{
 		getMendixObject().setValue(context, MemberNames.itemCount.toString(), itemcount);
 	}
@@ -343,7 +343,7 @@ public class TransientSalesOrderPivotTable
 	/**
 	 * @return value of employeeNumber
 	 */
-	public final Long getemployeeNumber()
+	public final java.lang.Long getemployeeNumber()
 	{
 		return getemployeeNumber(getContext());
 	}
@@ -352,16 +352,16 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @return value of employeeNumber
 	 */
-	public final Long getemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Long getemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Long) getMendixObject().getValue(context, MemberNames.employeeNumber.toString());
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.employeeNumber.toString());
 	}
 
 	/**
 	 * Set value of employeeNumber
 	 * @param employeenumber
 	 */
-	public final void setemployeeNumber(Long employeenumber)
+	public final void setemployeeNumber(java.lang.Long employeenumber)
 	{
 		setemployeeNumber(getContext(), employeenumber);
 	}
@@ -371,7 +371,7 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @param employeenumber
 	 */
-	public final void setemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context, Long employeenumber)
+	public final void setemployeeNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long employeenumber)
 	{
 		getMendixObject().setValue(context, MemberNames.employeeNumber.toString(), employeenumber);
 	}
@@ -379,7 +379,7 @@ public class TransientSalesOrderPivotTable
 	/**
 	 * @return value of employeeName
 	 */
-	public final String getemployeeName()
+	public final java.lang.String getemployeeName()
 	{
 		return getemployeeName(getContext());
 	}
@@ -388,16 +388,16 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @return value of employeeName
 	 */
-	public final String getemployeeName(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getemployeeName(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (String) getMendixObject().getValue(context, MemberNames.employeeName.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.employeeName.toString());
 	}
 
 	/**
 	 * Set value of employeeName
 	 * @param employeename
 	 */
-	public final void setemployeeName(String employeename)
+	public final void setemployeeName(java.lang.String employeename)
 	{
 		setemployeeName(getContext(), employeename);
 	}
@@ -407,7 +407,7 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @param employeename
 	 */
-	public final void setemployeeName(com.mendix.systemwideinterfaces.core.IContext context, String employeename)
+	public final void setemployeeName(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String employeename)
 	{
 		getMendixObject().setValue(context, MemberNames.employeeName.toString(), employeename);
 	}
@@ -415,7 +415,7 @@ public class TransientSalesOrderPivotTable
 	/**
 	 * @return value of totalSalesValueCcy
 	 */
-	public final Double gettotalSalesValueCcy()
+	public final java.lang.Double gettotalSalesValueCcy()
 	{
 		return gettotalSalesValueCcy(getContext());
 	}
@@ -424,16 +424,16 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @return value of totalSalesValueCcy
 	 */
-	public final Double gettotalSalesValueCcy(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Double gettotalSalesValueCcy(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (Double) getMendixObject().getValue(context, MemberNames.totalSalesValueCcy.toString());
+		return (java.lang.Double) getMendixObject().getValue(context, MemberNames.totalSalesValueCcy.toString());
 	}
 
 	/**
 	 * Set value of totalSalesValueCcy
 	 * @param totalsalesvalueccy
 	 */
-	public final void settotalSalesValueCcy(Double totalsalesvalueccy)
+	public final void settotalSalesValueCcy(java.lang.Double totalsalesvalueccy)
 	{
 		settotalSalesValueCcy(getContext(), totalsalesvalueccy);
 	}
@@ -443,7 +443,7 @@ public class TransientSalesOrderPivotTable
 	 * @param context
 	 * @param totalsalesvalueccy
 	 */
-	public final void settotalSalesValueCcy(com.mendix.systemwideinterfaces.core.IContext context, Double totalsalesvalueccy)
+	public final void settotalSalesValueCcy(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Double totalsalesvalueccy)
 	{
 		getMendixObject().setValue(context, MemberNames.totalSalesValueCcy.toString(), totalsalesvalueccy);
 	}
