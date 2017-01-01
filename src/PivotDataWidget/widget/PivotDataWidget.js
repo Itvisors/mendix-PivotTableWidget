@@ -74,6 +74,7 @@
              */
             postCreate: function () {
                 domClass.add(this.domNode, "PivotDataWidget");
+                this.domNode.setAttribute("tabIndex", -1);
 
                 // Load CSS ... automatically from ui directory
 
@@ -702,6 +703,8 @@
                 // Header row
                 headerRowNode = document.createElement("tr");
                 topLeftCellNode = document.createElement("th");
+                domClass.add(topLeftCellNode, "PivotDataWidgetTopLeft");
+
                 if (this.allowExport) {
                     exportButton = document.createElement('button');
                     exportButton.setAttribute('type', 'button');
@@ -710,6 +713,7 @@
                         exportButton.innerHTML = this.exportButtonCaption;
                     }
                     exportButton.onclick = lang.hitch(this, this.exportData);
+                    domClass.add(topLeftCellNode, "PivotDataWidgetExport");
                     topLeftCellNode.appendChild(exportButton);
                 }
                 headerRowNode.appendChild(topLeftCellNode);

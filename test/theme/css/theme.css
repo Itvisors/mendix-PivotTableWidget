@@ -856,6 +856,15 @@ a:hover {
    Additional styles for PivotDataWidget rotated column headers
    ========================================================================== */
 
+ .PivotDataWidget.PivotDataWidgetRotated table {
+	 border: none;
+ }
+ 
+ .PivotDataWidget.PivotDataWidgetRotated .PivotDataWidgetTopLeft {
+	 border: none;
+	 vertical-align: bottom;
+ }
+   
 .PivotDataWidgetHeaderRotatedCell {
     width: 40px;
     border: 1px solid #ccc;
@@ -869,7 +878,7 @@ a:hover {
     color: black;
 }
 
-.PivotDataWidgetHeaderRotated{
+.PivotDataWidget th.PivotDataWidgetHeaderRotated{
     height: 80px;
     width: 40px;
     min-width: 40px;
@@ -878,6 +887,7 @@ a:hover {
     vertical-align: bottom;
     padding: 0;
     font-size: 12px;
+	border:none;
 }
 
 .PivotDataWidgetHeaderRotated > div{
