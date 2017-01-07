@@ -618,6 +618,9 @@ define([
                 sortAttr = this.yIdAttr;
             }
             this.yKeyArray = this.sortAxisData(ySortValueMap, sortAttr, this.ySortDirection);
+            
+            // Explicitely clear the array to release the Mendix objects.
+            this.mendixObjectArray = null;
 
         },
 

@@ -41,19 +41,6 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
-	public static void iVK_RetrieveAppCloudUserAccountData(IContext context, usermanagement.proxies.Account _account)
-	{
-		try
-		{
-			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
-			params.put("Account", _account == null ? null : _account.getMendixObject());
-			Core.execute(context, "UserManagement.IVK_RetrieveAppCloudUserAccountData", params);
-		}
-		catch (CoreException e)
-		{
-			throw new MendixRuntimeException(e);
-		}
-	}
 	public static void manageMyAccount(IContext context)
 	{
 		try
@@ -88,19 +75,6 @@ public class Microflows
 		{
 			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
 			Core.execute(context, "UserManagement.NewWebServiceAccount", params);
-		}
-		catch (CoreException e)
-		{
-			throw new MendixRuntimeException(e);
-		}
-	}
-	public static void onFirstLoginAppCloudUser(IContext context, java.lang.String _userIdentity)
-	{
-		try
-		{
-			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
-			params.put("UserIdentity", _userIdentity);
-			Core.execute(context, "UserManagement.OnFirstLoginAppCloudUser", params);
 		}
 		catch (CoreException e)
 		{
