@@ -1091,7 +1091,8 @@ define([
                         if (colIndex === 0) {
                             exportData += '""';
                         } else {
-                            exportData += ',"' + cell.innerText + '"';
+                            // Structure: th/div/span
+                            exportData += ',"' + cell.firstChild.firstChild.innerText + '"';
                         }
                     } else {
                         if (colIndex === 0) {
