@@ -16,18 +16,18 @@ import communitycommons.XPath;
 /**
  * Removes ALL instances of a certain domain object type using batches.
  */
-public class deleteAll extends CustomJavaAction<java.lang.Boolean>
+public class deleteAll extends CustomJavaAction<Boolean>
 {
-	private java.lang.String entityType;
+	private String entityType;
 
-	public deleteAll(IContext context, java.lang.String entityType)
+	public deleteAll(IContext context, String entityType)
 	{
 		super(context);
 		this.entityType = entityType;
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return XPath.create(this.getContext(), entityType).deleteAll();
@@ -38,7 +38,7 @@ public class deleteAll extends CustomJavaAction<java.lang.Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "deleteAll";
 	}

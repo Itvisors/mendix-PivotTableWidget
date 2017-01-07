@@ -17,18 +17,18 @@ import com.mendix.webui.CustomJavaAction;
  * Use this function to convert HTML text to plain text. 
  * It will preserve linebreaks but strip all other markup. including html entity decoding.
  */
-public class HTMLToPlainText extends CustomJavaAction<java.lang.String>
+public class HTMLToPlainText extends CustomJavaAction<String>
 {
-	private java.lang.String html;
+	private String html;
 
-	public HTMLToPlainText(IContext context, java.lang.String html)
+	public HTMLToPlainText(IContext context, String html)
 	{
 		super(context);
 		this.html = html;
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return StringUtils.HTMLToPlainText(html);
@@ -39,7 +39,7 @@ public class HTMLToPlainText extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "HTMLToPlainText";
 	}

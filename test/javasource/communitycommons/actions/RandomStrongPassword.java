@@ -18,15 +18,15 @@ import com.mendix.webui.CustomJavaAction;
  * 
  * Note:Minimumlength should be equal or larger than NrOfCapitalizedCharacters, NrOfDigits and NrOfSpecialCharacters
  */
-public class RandomStrongPassword extends CustomJavaAction<java.lang.String>
+public class RandomStrongPassword extends CustomJavaAction<String>
 {
-	private java.lang.Long MinLength;
-	private java.lang.Long MaxLength;
-	private java.lang.Long NrOfCapitalizedCharacters;
-	private java.lang.Long NrOfDigits;
-	private java.lang.Long NrOfSpecialCharacters;
+	private Long MinLength;
+	private Long MaxLength;
+	private Long NrOfCapitalizedCharacters;
+	private Long NrOfDigits;
+	private Long NrOfSpecialCharacters;
 
-	public RandomStrongPassword(IContext context, java.lang.Long MinLength, java.lang.Long MaxLength, java.lang.Long NrOfCapitalizedCharacters, java.lang.Long NrOfDigits, java.lang.Long NrOfSpecialCharacters)
+	public RandomStrongPassword(IContext context, Long MinLength, Long MaxLength, Long NrOfCapitalizedCharacters, Long NrOfDigits, Long NrOfSpecialCharacters)
 	{
 		super(context);
 		this.MinLength = MinLength;
@@ -37,7 +37,7 @@ public class RandomStrongPassword extends CustomJavaAction<java.lang.String>
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return StringUtils.randomStrongPassword(safeLongToInt(this.MinLength), safeLongToInt(this.MaxLength),safeLongToInt(this.NrOfCapitalizedCharacters), safeLongToInt(NrOfDigits), safeLongToInt(NrOfSpecialCharacters));
@@ -48,7 +48,7 @@ public class RandomStrongPassword extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "RandomStrongPassword";
 	}

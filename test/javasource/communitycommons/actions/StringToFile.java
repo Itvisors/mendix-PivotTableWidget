@@ -19,13 +19,13 @@ import com.mendix.webui.CustomJavaAction;
  * 
  * Note that destination will be committed.
  */
-public class StringToFile extends CustomJavaAction<java.lang.Boolean>
+public class StringToFile extends CustomJavaAction<Boolean>
 {
-	private java.lang.String value;
+	private String value;
 	private IMendixObject __destination;
 	private system.proxies.FileDocument destination;
 
-	public StringToFile(IContext context, java.lang.String value, IMendixObject destination)
+	public StringToFile(IContext context, String value, IMendixObject destination)
 	{
 		super(context);
 		this.value = value;
@@ -33,7 +33,7 @@ public class StringToFile extends CustomJavaAction<java.lang.Boolean>
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		this.destination = __destination == null ? null : system.proxies.FileDocument.initialize(getContext(), __destination);
 
@@ -47,7 +47,7 @@ public class StringToFile extends CustomJavaAction<java.lang.Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "StringToFile";
 	}

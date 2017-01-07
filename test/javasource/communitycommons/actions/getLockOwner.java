@@ -17,7 +17,7 @@ import com.mendix.webui.CustomJavaAction;
 /**
  * Returns the user.name of the lock owner, or empty if the item is not locked.
  */
-public class getLockOwner extends CustomJavaAction<java.lang.String>
+public class getLockOwner extends CustomJavaAction<String>
 {
 	private IMendixObject item;
 
@@ -28,7 +28,7 @@ public class getLockOwner extends CustomJavaAction<java.lang.String>
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return ORM.getLockOwner(item);
@@ -39,7 +39,7 @@ public class getLockOwner extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "getLockOwner";
 	}

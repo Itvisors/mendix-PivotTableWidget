@@ -19,13 +19,13 @@ import com.mendix.systemwideinterfaces.core.IMendixObject;
 /**
  * Set the contents of a FileDocument with the contents of a file which is a resource.
  */
-public class GetFileContentsFromResource extends CustomJavaAction<java.lang.Boolean>
+public class GetFileContentsFromResource extends CustomJavaAction<Boolean>
 {
-	private java.lang.String filename;
+	private String filename;
 	private IMendixObject __fileDocument;
 	private system.proxies.FileDocument fileDocument;
 
-	public GetFileContentsFromResource(IContext context, java.lang.String filename, IMendixObject fileDocument)
+	public GetFileContentsFromResource(IContext context, String filename, IMendixObject fileDocument)
 	{
 		super(context);
 		this.filename = filename;
@@ -33,7 +33,7 @@ public class GetFileContentsFromResource extends CustomJavaAction<java.lang.Bool
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		this.fileDocument = __fileDocument == null ? null : system.proxies.FileDocument.initialize(getContext(), __fileDocument);
 
@@ -53,7 +53,7 @@ public class GetFileContentsFromResource extends CustomJavaAction<java.lang.Bool
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "GetFileContentsFromResource";
 	}

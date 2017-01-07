@@ -18,18 +18,18 @@ import com.mendix.webui.CustomJavaAction;
  *  
  * Delaytime : time in ms
  */
-public class Delay extends CustomJavaAction<java.lang.Boolean>
+public class Delay extends CustomJavaAction<Boolean>
 {
-	private java.lang.Long delaytime;
+	private Long delaytime;
 
-	public Delay(IContext context, java.lang.Long delaytime)
+	public Delay(IContext context, Long delaytime)
 	{
 		super(context);
 		this.delaytime = delaytime;
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		Misc.delay(delaytime);
@@ -41,7 +41,7 @@ public class Delay extends CustomJavaAction<java.lang.Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "Delay";
 	}

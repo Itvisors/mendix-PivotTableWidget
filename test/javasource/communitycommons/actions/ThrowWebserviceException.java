@@ -20,18 +20,18 @@ import com.mendix.webui.CustomJavaAction;
  * 
  * If debug level of community commons is set to 'debug' the errors will be locally visible as well, otherwise not. Throwing a webservice exception states that the webservice invocation was incorrect, not the webservice implementation.
  */
-public class ThrowWebserviceException extends CustomJavaAction<java.lang.Boolean>
+public class ThrowWebserviceException extends CustomJavaAction<Boolean>
 {
-	private java.lang.String faultstring;
+	private String faultstring;
 
-	public ThrowWebserviceException(IContext context, java.lang.String faultstring)
+	public ThrowWebserviceException(IContext context, String faultstring)
 	{
 		super(context);
 		this.faultstring = faultstring;
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		Misc.throwWebserviceException(faultstring);
@@ -43,7 +43,7 @@ public class ThrowWebserviceException extends CustomJavaAction<java.lang.Boolean
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "ThrowWebserviceException";
 	}

@@ -16,7 +16,7 @@ import com.mendix.webui.CustomJavaAction;
 /**
  * Returns the runtime URL of this application.
  */
-public class GetApplicationUrl extends CustomJavaAction<java.lang.String>
+public class GetApplicationUrl extends CustomJavaAction<String>
 {
 	public GetApplicationUrl(IContext context)
 	{
@@ -24,7 +24,7 @@ public class GetApplicationUrl extends CustomJavaAction<java.lang.String>
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return Misc.getApplicationURL();
@@ -35,7 +35,7 @@ public class GetApplicationUrl extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "GetApplicationUrl";
 	}

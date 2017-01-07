@@ -22,7 +22,7 @@ import com.mendix.webui.CustomJavaAction;
  * NOTE:
  * before 2.1, this functioned returned the size in kilobytes, although this documentation mentioned bytes
  */
-public class getFileSize extends CustomJavaAction<java.lang.Long>
+public class getFileSize extends CustomJavaAction<Long>
 {
 	private IMendixObject __document;
 	private system.proxies.FileDocument document;
@@ -34,7 +34,7 @@ public class getFileSize extends CustomJavaAction<java.lang.Long>
 	}
 
 	@Override
-	public java.lang.Long executeAction() throws Exception
+	public Long executeAction() throws Exception
 	{
 		this.document = __document == null ? null : system.proxies.FileDocument.initialize(getContext(), __document);
 
@@ -47,7 +47,7 @@ public class getFileSize extends CustomJavaAction<java.lang.Long>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "getFileSize";
 	}

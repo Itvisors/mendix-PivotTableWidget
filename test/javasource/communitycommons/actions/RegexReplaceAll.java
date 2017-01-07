@@ -21,13 +21,13 @@ import com.mendix.webui.CustomJavaAction;
  * A decent regexp tester can be found at:
  * http://www.fileformat.info/tool/regex.htm
  */
-public class RegexReplaceAll extends CustomJavaAction<java.lang.String>
+public class RegexReplaceAll extends CustomJavaAction<String>
 {
-	private java.lang.String haystack;
-	private java.lang.String needleRegex;
-	private java.lang.String replacement;
+	private String haystack;
+	private String needleRegex;
+	private String replacement;
 
-	public RegexReplaceAll(IContext context, java.lang.String haystack, java.lang.String needleRegex, java.lang.String replacement)
+	public RegexReplaceAll(IContext context, String haystack, String needleRegex, String replacement)
 	{
 		super(context);
 		this.haystack = haystack;
@@ -36,7 +36,7 @@ public class RegexReplaceAll extends CustomJavaAction<java.lang.String>
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return StringUtils.regexReplaceAll(haystack, needleRegex, replacement);
@@ -47,7 +47,7 @@ public class RegexReplaceAll extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "RegexReplaceAll";
 	}

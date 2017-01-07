@@ -15,7 +15,7 @@ import com.mendix.webui.CustomJavaAction;
 /**
  * Ends the current transaction.
  */
-public class EndTransaction extends CustomJavaAction<java.lang.Boolean>
+public class EndTransaction extends CustomJavaAction<Boolean>
 {
 	public EndTransaction(IContext context)
 	{
@@ -23,7 +23,7 @@ public class EndTransaction extends CustomJavaAction<java.lang.Boolean>
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		getContext().endTransaction();
@@ -35,7 +35,7 @@ public class EndTransaction extends CustomJavaAction<java.lang.Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "EndTransaction";
 	}

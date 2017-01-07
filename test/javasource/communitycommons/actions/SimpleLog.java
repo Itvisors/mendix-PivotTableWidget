@@ -17,18 +17,18 @@ import com.mendix.webui.CustomJavaAction;
  * Logs a message to 'Community Commons' with loglevel 'Info'. 
  * - message: the message to log
  */
-public class SimpleLog extends CustomJavaAction<java.lang.Boolean>
+public class SimpleLog extends CustomJavaAction<Boolean>
 {
-	private java.lang.String message;
+	private String message;
 
-	public SimpleLog(IContext context, java.lang.String message)
+	public SimpleLog(IContext context, String message)
 	{
 		super(context);
 		this.message = message;
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		Logging.simpleLog(message);
@@ -40,7 +40,7 @@ public class SimpleLog extends CustomJavaAction<java.lang.Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "SimpleLog";
 	}

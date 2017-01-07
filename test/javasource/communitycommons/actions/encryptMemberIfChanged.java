@@ -27,14 +27,14 @@ import communitycommons.ORM;
  * 
  * returns: true if the value was changed and has been re-encrypted. False otherwise
  */
-public class encryptMemberIfChanged extends CustomJavaAction<java.lang.Boolean>
+public class encryptMemberIfChanged extends CustomJavaAction<Boolean>
 {
 	private IMendixObject item;
-	private java.lang.String attributeName;
-	private java.lang.String key;
-	private java.lang.Boolean refreshItem;
+	private String attributeName;
+	private String key;
+	private Boolean refreshItem;
 
-	public encryptMemberIfChanged(IContext context, IMendixObject item, java.lang.String attributeName, java.lang.String key, java.lang.Boolean refreshItem)
+	public encryptMemberIfChanged(IContext context, IMendixObject item, String attributeName, String key, Boolean refreshItem)
 	{
 		super(context);
 		this.item = item;
@@ -44,7 +44,7 @@ public class encryptMemberIfChanged extends CustomJavaAction<java.lang.Boolean>
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		if (refreshItem && item != null) {
@@ -59,7 +59,7 @@ public class encryptMemberIfChanged extends CustomJavaAction<java.lang.Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "encryptMemberIfChanged";
 	}

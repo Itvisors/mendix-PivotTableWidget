@@ -16,7 +16,7 @@ import communitycommons.DateTime;
 /**
  * Converts a DateTime to a Unix timestamps. (Milliseconds since 1-1-1970)
  */
-public class DateTimeToLong extends CustomJavaAction<java.lang.Long>
+public class DateTimeToLong extends CustomJavaAction<Long>
 {
 	private java.util.Date dateObject;
 
@@ -27,7 +27,7 @@ public class DateTimeToLong extends CustomJavaAction<java.lang.Long>
 	}
 
 	@Override
-	public java.lang.Long executeAction() throws Exception
+	public Long executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return DateTime.dateTimeToLong(dateObject);
@@ -38,7 +38,7 @@ public class DateTimeToLong extends CustomJavaAction<java.lang.Long>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "DateTimeToLong";
 	}

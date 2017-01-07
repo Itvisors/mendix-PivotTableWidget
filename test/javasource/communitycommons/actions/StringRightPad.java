@@ -22,13 +22,13 @@ import com.mendix.webui.CustomJavaAction;
  * StringRightPad("hello", 8, "-")  returns "hello---"
  * StringLeftpad("hello", 2, "-")  returns "hello"
  */
-public class StringRightPad extends CustomJavaAction<java.lang.String>
+public class StringRightPad extends CustomJavaAction<String>
 {
-	private java.lang.String value;
-	private java.lang.Long amount;
-	private java.lang.String fillCharacter;
+	private String value;
+	private Long amount;
+	private String fillCharacter;
 
-	public StringRightPad(IContext context, java.lang.String value, java.lang.Long amount, java.lang.String fillCharacter)
+	public StringRightPad(IContext context, String value, Long amount, String fillCharacter)
 	{
 		super(context);
 		this.value = value;
@@ -37,7 +37,7 @@ public class StringRightPad extends CustomJavaAction<java.lang.String>
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return communitycommons.StringUtils.rightPad(value, amount, fillCharacter);
@@ -48,7 +48,7 @@ public class StringRightPad extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "StringRightPad";
 	}

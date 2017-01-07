@@ -16,12 +16,12 @@ import com.mendix.webui.CustomJavaAction;
 /**
  * Generates and asymmetric hash using the HMAC_SHA256 hash algorithm
  */
-public class GenerateHMAC_SHA256_hash extends CustomJavaAction<java.lang.String>
+public class GenerateHMAC_SHA256_hash extends CustomJavaAction<String>
 {
-	private java.lang.String key;
-	private java.lang.String valueToEncrypt;
+	private String key;
+	private String valueToEncrypt;
 
-	public GenerateHMAC_SHA256_hash(IContext context, java.lang.String key, java.lang.String valueToEncrypt)
+	public GenerateHMAC_SHA256_hash(IContext context, String key, String valueToEncrypt)
 	{
 		super(context);
 		this.key = key;
@@ -29,7 +29,7 @@ public class GenerateHMAC_SHA256_hash extends CustomJavaAction<java.lang.String>
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return StringUtils.generateHmacSha256Hash(key, valueToEncrypt);
@@ -40,7 +40,7 @@ public class GenerateHMAC_SHA256_hash extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "GenerateHMAC_SHA256_hash";
 	}

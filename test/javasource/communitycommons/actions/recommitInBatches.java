@@ -13,14 +13,17 @@ import communitycommons.Misc;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
-public class recommitInBatches extends CustomJavaAction<java.lang.Boolean>
+/**
+ * 
+ */
+public class recommitInBatches extends CustomJavaAction<Boolean>
 {
-	private java.lang.String xpath;
-	private java.lang.Long batchsize;
-	private java.lang.Boolean waitUntilFinished;
-	private java.lang.Boolean ascending;
+	private String xpath;
+	private Long batchsize;
+	private Boolean waitUntilFinished;
+	private Boolean ascending;
 
-	public recommitInBatches(IContext context, java.lang.String xpath, java.lang.Long batchsize, java.lang.Boolean waitUntilFinished, java.lang.Boolean ascending)
+	public recommitInBatches(IContext context, String xpath, Long batchsize, Boolean waitUntilFinished, Boolean ascending)
 	{
 		super(context);
 		this.xpath = xpath;
@@ -30,7 +33,7 @@ public class recommitInBatches extends CustomJavaAction<java.lang.Boolean>
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return Misc.recommitInBatches(xpath, batchsize.intValue(), waitUntilFinished.booleanValue(), ascending);
@@ -41,7 +44,7 @@ public class recommitInBatches extends CustomJavaAction<java.lang.Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "recommitInBatches";
 	}

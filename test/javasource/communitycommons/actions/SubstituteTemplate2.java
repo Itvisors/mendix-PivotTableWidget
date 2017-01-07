@@ -19,14 +19,14 @@ import com.mendix.webui.CustomJavaAction;
  * 
  * DateTimeFormat identifies a format string which is applied to date/time based attributes. Can be left empty. Defaults to "EEE dd MMM yyyy, HH:mm"
  */
-public class SubstituteTemplate2 extends CustomJavaAction<java.lang.String>
+public class SubstituteTemplate2 extends CustomJavaAction<String>
 {
-	private java.lang.String template;
+	private String template;
 	private IMendixObject substitute;
-	private java.lang.Boolean useHTMLEncoding;
-	private java.lang.String datetimeformat;
+	private Boolean useHTMLEncoding;
+	private String datetimeformat;
 
-	public SubstituteTemplate2(IContext context, java.lang.String template, IMendixObject substitute, java.lang.Boolean useHTMLEncoding, java.lang.String datetimeformat)
+	public SubstituteTemplate2(IContext context, String template, IMendixObject substitute, Boolean useHTMLEncoding, String datetimeformat)
 	{
 		super(context);
 		this.template = template;
@@ -36,7 +36,7 @@ public class SubstituteTemplate2 extends CustomJavaAction<java.lang.String>
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return StringUtils.substituteTemplate(this.getContext(), template, substitute, useHTMLEncoding, this.datetimeformat);
@@ -47,7 +47,7 @@ public class SubstituteTemplate2 extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "SubstituteTemplate2";
 	}

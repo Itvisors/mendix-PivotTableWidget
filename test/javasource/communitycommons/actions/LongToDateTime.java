@@ -18,9 +18,9 @@ import communitycommons.DateTime;
  */
 public class LongToDateTime extends CustomJavaAction<java.util.Date>
 {
-	private java.lang.Long value;
+	private Long value;
 
-	public LongToDateTime(IContext context, java.lang.Long value)
+	public LongToDateTime(IContext context, Long value)
 	{
 		super(context);
 		this.value = value;
@@ -38,7 +38,7 @@ public class LongToDateTime extends CustomJavaAction<java.util.Date>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "LongToDateTime";
 	}

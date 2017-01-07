@@ -16,18 +16,18 @@ import communitycommons.StringUtils;
 /**
  * Escapes a string value so that it can be used literally with Mendix build-in regex replacement functions. (Otherwise the dollar sign would be interpreted as back reference to a match for example). 
  */
-public class RegexQuote extends CustomJavaAction<java.lang.String>
+public class RegexQuote extends CustomJavaAction<String>
 {
-	private java.lang.String unquotedLiteral;
+	private String unquotedLiteral;
 
-	public RegexQuote(IContext context, java.lang.String unquotedLiteral)
+	public RegexQuote(IContext context, String unquotedLiteral)
 	{
 		super(context);
 		this.unquotedLiteral = unquotedLiteral;
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		return StringUtils.regexQuote(unquotedLiteral);
@@ -38,7 +38,7 @@ public class RegexQuote extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "RegexQuote";
 	}

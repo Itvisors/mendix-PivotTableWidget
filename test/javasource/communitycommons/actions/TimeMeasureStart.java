@@ -19,18 +19,18 @@ import com.mendix.webui.CustomJavaAction;
  * 
  * Note that multiple timers can run at once. Existing timers can be restarted using this function as well.
  */
-public class TimeMeasureStart extends CustomJavaAction<java.lang.Boolean>
+public class TimeMeasureStart extends CustomJavaAction<Boolean>
 {
-	private java.lang.String TimerName;
+	private String TimerName;
 
-	public TimeMeasureStart(IContext context, java.lang.String TimerName)
+	public TimeMeasureStart(IContext context, String TimerName)
 	{
 		super(context);
 		this.TimerName = TimerName;
 	}
 
 	@Override
-	public java.lang.Boolean executeAction() throws Exception
+	public Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		Logging.measureStart(TimerName);
@@ -42,7 +42,7 @@ public class TimeMeasureStart extends CustomJavaAction<java.lang.Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "TimeMeasureStart";
 	}

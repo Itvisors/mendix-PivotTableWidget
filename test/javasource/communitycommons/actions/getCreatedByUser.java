@@ -41,7 +41,7 @@ public class getCreatedByUser extends CustomJavaAction<IMendixObject>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "getCreatedByUser";
 	}

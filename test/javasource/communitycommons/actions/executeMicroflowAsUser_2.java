@@ -17,17 +17,17 @@ import com.mendix.webui.CustomJavaAction;
 /**
  * Identical to executeMicroflowAsUser, but takes 2 arguments
  */
-public class executeMicroflowAsUser_2 extends CustomJavaAction<java.lang.String>
+public class executeMicroflowAsUser_2 extends CustomJavaAction<String>
 {
-	private java.lang.String microflowName;
-	private java.lang.String username;
-	private java.lang.Boolean sudoContext;
-	private java.lang.String arg1name;
+	private String microflowName;
+	private String username;
+	private Boolean sudoContext;
+	private String arg1name;
 	private IMendixObject arg1value;
-	private java.lang.String arg2name;
+	private String arg2name;
 	private IMendixObject arg2value;
 
-	public executeMicroflowAsUser_2(IContext context, java.lang.String microflowName, java.lang.String username, java.lang.Boolean sudoContext, java.lang.String arg1name, IMendixObject arg1value, java.lang.String arg2name, IMendixObject arg2value)
+	public executeMicroflowAsUser_2(IContext context, String microflowName, String username, Boolean sudoContext, String arg1name, IMendixObject arg1value, String arg2name, IMendixObject arg2value)
 	{
 		super(context);
 		this.microflowName = microflowName;
@@ -40,7 +40,7 @@ public class executeMicroflowAsUser_2 extends CustomJavaAction<java.lang.String>
 	}
 
 	@Override
-	public java.lang.String executeAction() throws Exception
+	public String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
 		Object res = Misc.executeMicroflowAsUser(getContext(), microflowName, username, sudoContext, arg1name, arg1value, arg2name, arg2value);
@@ -52,7 +52,7 @@ public class executeMicroflowAsUser_2 extends CustomJavaAction<java.lang.String>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public java.lang.String toString()
+	public String toString()
 	{
 		return "executeMicroflowAsUser_2";
 	}

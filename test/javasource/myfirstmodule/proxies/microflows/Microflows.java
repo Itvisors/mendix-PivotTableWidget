@@ -259,6 +259,19 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
+	public static void transientIncidentPivotTableParameters_Save(IContext context, myfirstmodule.proxies.TransientIncidentPivotTableParameters _transientIncidentPivotTableParameters)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("TransientIncidentPivotTableParameters", _transientIncidentPivotTableParameters == null ? null : _transientIncidentPivotTableParameters.getMendixObject());
+			Core.execute(context, "MyFirstModule.TransientIncidentPivotTableParameters_Save", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
 	public static java.util.List<myfirstmodule.proxies.TransientRelationPivotTable> transientRelationPivotTable_CreateEmptyList(IContext context, myfirstmodule.proxies.TransientRelationPivotTableParameters _parameters)
 	{
 		try
