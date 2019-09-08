@@ -99,7 +99,7 @@ define([
             // console.log(this.domNode.id + ": applyContext");
 
             if (this.handle) {
-                mx.data.unsubscribe(this.handle);
+                this.unsubscribe(this.handle);
             }
 
             if (obj) {
@@ -107,10 +107,10 @@ define([
                 // console.log(this.domNode.id + ": applyContext, context object GUID: " + this.contextGUID);
                 if (this.checkProperties()) {
                     if (this.callGetDataMicroflow === "crtOnly" || this.callGetDataMicroflow === "crtAndChg") {
-                        thisObj.getData();
+                        this.getData();
                     }
                     if (this.callGetDataMicroflow === "crtAndChg" || this.callGetDataMicroflow === "chgOnly") {
-                        this.handle = mx.data.subscribe({
+                        this.handle = this.subscribe({
                             guid: this.contextGUID,
                             callback: lang.hitch(this, this.contextObjectChangedCallback)
                         });
@@ -618,7 +618,7 @@ define([
                 sortAttr = this.yIdAttr;
             }
             this.yKeyArray = this.sortAxisData(ySortValueMap, sortAttr, this.ySortDirection);
-            
+
             // Explicitely clear the array to release the Mendix objects.
             this.mendixObjectArray = null;
 
@@ -755,7 +755,7 @@ define([
                 node = domConstruct.create("th", { innerHTML: yLabelValue }, rowNode);
                 domClass.add(node, this.yLabelClass);
 
-                // Columns                    
+                // Columns
                 yTotal = 0;
                 for (colIndex = 0; colIndex < this.xKeyArray.length; colIndex = colIndex + 1) {
                     // Get the ID
@@ -1248,14 +1248,14 @@ define([
         },
 
         /**
-         * Show progress indicator, depends on Mendix version
+         * Show progress indicator
          */
         showProgress: function () {
             this.progressDialogId = mx.ui.showProgress();
         },
 
         /**
-         * Hide progress indicator, depends on Mendix version
+         * Hide progress indicator
          */
         hideProgress: function () {
             mx.ui.hideProgress(this.progressDialogId);
@@ -1345,9 +1345,6 @@ define([
          */
         uninitialize: function () {
             // console.log(this.domNode.id + ": uninitialize");
-            if (this.handle) {
-                mx.data.unsubscribe(this.handle);
-            }
             if (this.progressDialogId) {
                 this.hideProgress();
             }
