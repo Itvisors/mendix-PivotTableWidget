@@ -3,7 +3,7 @@ mendix-PivotTableWidget
 
 Mendix Pivot Table Widget
 
-##Description
+## Description
 This widget calls a microflow to get a list of entity objects and creates a pivot table using the list.
 
 The context the widget is placed in is passed on to the the microflow. This allows the application to present a selection screen and pass those selections to the microflow that creates the list.
@@ -31,7 +31,7 @@ Have a look at the screen shots or download the Pivot Table Demo Project
 - Count incidents for carriers and categories, highlight areas with many incidents.
 - Average or total sales value per month and region, highlight areas with low and high values.
 
-##Features And Limitations
+## Features And Limitations
 
 - Widget calls a microflow to retrieve the data.
 - Microflow receives the context the widget was placed in.
@@ -47,17 +47,17 @@ Have a look at the screen shots or download the Pivot Table Demo Project
 - It is not possible to call a microflow with simple types as parameters so another entity is necessary to pass the selection to the microflow when the user clicks on a cell.
 - Float is not currently supported.
 
-##Installation
+## Installation
 
 Normal installation using the App Store
 
-##Dependencies
+## Dependencies
  
 - Mendix 6 Environment
 
-##Configuration
+## Configuration
 
-###Non-persistent entities
+### Non-persistent entities
 The pivot table widget can use any entity as the data object. However, it is advised to use non-persistent entities for this widget for a number of reasons:
 
 - To minimize server roundtrips and keep the widget design simple, only direct attributes of the entity can be used, no references.
@@ -66,7 +66,7 @@ The pivot table widget can use any entity as the data object. However, it is adv
 
 When dealing with very large datasets, performance can become a problem. In that case, the microflow can already aggregate the data. An example: For the total sales value, the microflow returns one object for each combination of month and region, containing the total sales value for that combination. The pivot table widget still performs a sum action on the data, to create the total column and row values. This way, tens of thousands of records can be put in the pivot table with acceptable response.
 
-##Step by step
+## Step by step
 The typical flow when using this widget:
 
 1. Show a page containing a Data view of the (non-persistent) selection criteria entity.
@@ -77,8 +77,8 @@ The typical flow when using this widget:
 
 The selection criteria and the pivot table widget can be on the same page to allow the user to change the criteria and see the result without page navigation.
 
-##Properties
-###Configuration, X-axis and Y-axis categories
+## Properties
+### Configuration, X-axis and Y-axis categories
 
 The first part is the configuration of the entity and its attributes. The entity must match the return value of the microflow. For the axis grouping and label values, numbers and strings are supported but also dates and enums. For dates a date format can be specified. For enums the caption will be shown as label.
 
@@ -90,7 +90,7 @@ By default the X and Y axis values are sorted ascending on their display values.
 
 The pivot table widget can display an additional column and row for the totals, only for actions Count and Sum.
 
-###React to context object updates.
+### React to context object updates.
 
 The pivot table widget can call the microflow in these situations:
 
@@ -98,7 +98,7 @@ The pivot table widget can call the microflow in these situations:
 - After the context object is committed, can be used to allow the user to specify criteria before building the table.
 - Both of the above.
 
-###Styling category
+### Styling category
 
 All parts of the pivot table widget can be styled. Each class property has a default. There are two row classes to allow for an alternating background color. This makes large tables much easier to read.
 
@@ -124,15 +124,15 @@ No data text class | PivotDataWidgetNoDataText | No data text CSS class.
 On cell click class | PivotDataWidgetCellClickable | On cell click CSS class. This is an additional class applied to each table cell when the on cell click microflow is configured
 Export button class | | Export button CSS class. This is an additional class applied to the export button.
 
-###Styling thresholds
+### Styling thresholds
 
 To highlight certain values, styling thresholds can be defined. When the cell value is at least the threshold value and less than any next threshold value, the CSS class will be applied to the cell. Only the CSS class of the highest threshold will be used.
 
-###Styling for display action
+### Styling for display action
 
 The display action allows an additional class to be specified, containing the actual value. Most effective for a small number of unique values or enumerations.
 
-####Configuration onCellClick category
+#### Configuration onCellClick category
 
 Unfortunately, it is not possible to call a microflow with simple parameters, like strings or integers.
 
@@ -142,7 +142,7 @@ When you create an association from the on click entity to the context entity, y
 
 **It is strongly advised to use a non-persistent entity for this purpose!**
 
-####Export as CSV
+#### Export as CSV
 The widget can export the table data as CSV. This does require a little work in the modeler. You will need to create the following:
 
 1. A non-persistent entity with an unlimited string attribute to hold the data.
@@ -154,13 +154,13 @@ The widget can export the table data as CSV. This does require a little work in 
 
 The pivot table sample project contains microflow ExportCsvData that performs these actions.
 
-##Known Bugs
+## Known Bugs
  
 
 None
  
 
-##Frequently Asked Questions
+## Frequently Asked Questions
  
 
 Ask your question at the Mendix Community Forum
