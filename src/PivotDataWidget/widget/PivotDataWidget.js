@@ -1080,7 +1080,7 @@ define([
             if (this.cellValueAction === "count") {
                 useQuotes = false;
             } else {
-                if (this.cellValueAttrType !== "DateTime") {
+                if (this.cellValueAttrType === "DateTime") {
                     useQuotes = false;
                 }
             }
